@@ -1,0 +1,36 @@
+<div class="page2">
+            <!-- <label for="page2"></label> -->
+            <h1>Halaman 1</h1>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam
+              fuga error voluptates quis enim corrupti. Aspernatur deserunt
+              commodi sunt ducimus error, perferendis nam optio quae molestiae
+              ex, voluptatem, veritatis saepe eum. Ad nihil et blanditiis,
+              nesciunt in ratione, iusto adipisci neque, doloremque dolore rem
+              nisi porro quae aut beatae sunt!
+            </p>
+          </div>
+          <div class="page3">
+            <label for="page3"></label>
+            <h1>Halaman 2</h1>
+          </div>
+          <div class="page4">
+            <label for="page4"></label>
+            <h1>Halaman 3</h1>
+          </div>
+          <div class="page5">
+            <label for="page5"></label>
+            <h1>Halaman 4</h1>
+          </div>
+          <div class="page6">
+            <label for="page6"></label>
+            <h1>Halaman 5</h1>
+          </div>
+          <div class="page7">
+            <label for="page7"></label>
+            <h1>Halaman 6</h1>
+          </div>
+          <div class="page8">
+            <label for="page8"></label>
+            <h1>Back Cover</h1>
+          </div>

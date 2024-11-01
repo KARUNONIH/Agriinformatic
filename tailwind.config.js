@@ -11,6 +11,8 @@ module.exports = {
       body: ['"Open Sans"'],
       bubble: ["Bubble Bobble", "sans-serif"],
       rainstrom: ["Rainstorm", "sans-serif"],
+      agbalumo: ["Agbalumo", "system-ui"],
+      poppins: ["Poppins", "system-ui"],
     },
     extend: {},
   },

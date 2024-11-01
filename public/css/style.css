@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'Rainstorm';
+  src: url('../font/Rain-Strom.otf') format('OpenType');
+}
+      
       html,
       body {
         height: 100vh;

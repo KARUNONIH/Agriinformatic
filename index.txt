@@ -28,10 +28,10 @@
           </div>
           <div class="page">
             <div class="front-page" data-page="tableofcontent">
-              <div class="h-full w-full bg-cover p-8" style="background-image: url(&quot;./public/asset/page2.png&quot;)"></div>
+              <center><h1>Daftar isi</h1></center>
             </div>
             <div class="back-page" data-page="1">
-              <div class="h-full w-full bg-cover p-8" style="background-image: url(&quot;./public/asset/page3.png&quot;)"></div>
+              <center><h1>Halaman 1</h1></center>
             </div>
           </div>
           <div class="page">
@@ -47,7 +47,7 @@
               </div>
             </div>
             <div class="back-page" data-page="3">
-              <div class="h-full w-full bg-cover p-8" style="background-image: url(&quot;./public/asset/page5.png&quot;)"></div>
+              <center><h1>Halaman 3</h1></center>
             </div>
           </div>
           <div class="page">
@@ -55,7 +55,7 @@
               <div class="h-full w-full bg-cover" style="background-image: url(&quot;./public/asset/page6.png&quot;)"></div>
             </div>
             <div class="back-page" data-page="5">
-              <div class="h-full w-full bg-cover p-8" style="background-image: url(&quot;./public/asset/page7.png&quot;)"></div>
+              <center><h1>Halaman 5</h1></center>
             </div>
           </div>
           <div class="page">

@@ -9,19 +9,22 @@
     <link href="https://fonts.cdnfonts.com/css/bubble-bobble" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+    <link rel="icon" href="./public/asset/logo.png" type="image/png">
   </head>
   <body>
-    
-  
+    <div class="fixed h-screen w-screen bg-cover z-20 min-[550px]:hidden flex justify-center items-center" style="background-image: url(&quot;./public/asset/page2.png&quot;)">
+      <h1 class="font-agbalumo text-3xl  text-white [text-shadow:_0_4px_4px_rgb(3_140_203_/_0.75)]">Please Rotate Your Phone</h1>
+    </div>
     <div class="container">
-      <div class="book">
+      <div class="book w-[300px] h-[300px] min-[1200px]:w-[550px] min-[1200px]:h-[550px] min-[1200px]:ml-[30%] ml-[80%]">
         <div class="pages">
           <div class="page">
             <div class="front-page" data-page="frontcover">
               <div class="h-full w-full bg-cover p-8" style="background-image: url(&quot;./public/asset/Cover.png&quot;)">
-                <h1 class="font-bubble text-[54px] text-white [text-shadow:_0_4px_4px_rgb(3_140_203_/_0.75)]">Peduli Penyu,</h1>
-                <p class="font-rainstrom text-3xl tracking-widest text-white [text-shadow:_0_4px_4px_rgb(3_140_203_/_0.75)]">Peduli Ekosistem Laut!</p>
+                <h1 class="font-bubble text-xl min-[1200px]:text-[54px] mb-5 text-white [text-shadow:_0_4px_4px_rgb(3_140_203_/_0.75)]">Peduli Penyu,</h1>
+                <p class="font-rainstrom text-xl min-[1200px]:text-3xl tracking-widest text-white [text-shadow:_0_4px_4px_rgb(3_140_203_/_0.75)]">Peduli Ekosistem Laut!</p>
               </div>
             </div>
             <div class="back-page" data-page="frontcoverback">
@@ -30,9 +33,72 @@
           </div>
           <div class="page">
             <div class="front-page" data-page="tableofcontent">
-              <div class="h-full w-full bg-cover p-8" style="background-image: url(&quot;./public/asset/page2.png&quot;)">
-                <section class="w-max bg-cover" style="background-image: url(&quot;./public/asset/background-text.png&quot;); background-size: 100% 100%">
-                  <p class="inline-block px-12 pt-2 pb-6 font-agbalumo text-3xl text-white [text-shadow:_0_4px_4px_rgb(3_140_203_/_0.75)]" >daftar isi</p>
+              <div class="relative h-full w-full bg-cover min-[1200px]:p-8 px-4 min-[1200px]:px-0" style="background-image: url(&quot;./public/asset/page2.png&quot;)">
+                <h1 class="absolute bottom-3 right-3 font-agbalumo text-base min-[1200px]:text-3xl text-white [text-shadow:_0_4px_4px_rgb(3_140_203_/_0.75)]">i</h1>
+                <section class="">
+                  <p class="inline-block pb-6 pt-2 font-agbalumo text-xl min-[1200px]:text-3xl text-white [text-shadow:_0_4px_4px_rgb(3_140_203_/_0.75)]">daftar isi</p>
+                  <div class="relative z-50 cursor-default scrollbar pr-2 overflow-y-auto max-h-[200px] min-[1200px]:max-h-none" id="container-daftar-isi">
+                    <div class="flex items-center justify-between font-poppins text-white" onclick="flipFrontPage(0)">
+                      <p class="cursor-pointer font-bold text-xs min-[1200px]:text-base">Daftar Isi</p>
+                      <p class="text-xs min-[1200px]:text-base cursor-pointer">i</p>
+                    </div>
+                    <div class="flex items-center justify-between font-poppins text-white" onclick="flipFrontPage(1)">
+                      <p class="cursor-pointer font-bold text-xs min-[1200px]:text-base">Pengantar</p>
+                      <p class="text-xs min-[1200px]:text-base cursor-pointer">1</p>
+                    </div>
+                    <div class="flex items-center justify-between font-poppins text-white" onclick="flipFrontPage(1)">
+                      <p class="cursor-pointer font-bold text-xs min-[1200px]:text-base">Definisi Penyu</p>
+                      <p class="text-xs min-[1200px]:text-base cursor-pointer">2</p>
+                    </div>
+                    <div class="flex items-center justify-between font-poppins text-white" onclick="flipFrontPage(2)">
+                      <p class="cursor-pointer font-bold text-xs min-[1200px]:text-base">Ciri Fisik Penyu</p>
+                      <p class="text-xs min-[1200px]:text-base cursor-pointer">3</p>
+                    </div>
+                    <div class="flex items-center justify-between font-poppins text-white" onclick="flipFrontPage(3)">
+                      <p class="cursor-pointer font-bold text-xs min-[1200px]:text-base">Habitat Penyu</p>
+                      <p class="text-xs min-[1200px]:text-base cursor-pointer">5</p>
+                    </div>
+                    <div class="flex items-center justify-between font-poppins text-white" onclick="flipFrontPage(3)">
+                      <p class="cursor-pointer font-bold text-xs min-[1200px]:text-base">Siklus Hidup Penyu</p>
+                      <p class="text-xs min-[1200px]:text-base cursor-pointer">6</p>
+                    </div>
+                    <div class="flex items-center justify-between font-poppins text-white" onclick="flipFrontPage(4)">
+                      <p class="cursor-pointer font-bold text-xs min-[1200px]:text-base">Berita Penyu</p>
+                      <p class="text-xs min-[1200px]:text-base cursor-pointer">7</p>
+                    </div>
+                    <div class="flex items-center justify-between font-poppins text-white" onclick="flipFrontPage(5)">
+                      <p class="cursor-pointer font-bold text-xs min-[1200px]:text-base">Ancaman terhadap Penyu</p>
+                      <p class="text-xs min-[1200px]:text-base cursor-pointer">9</p>
+                    </div>
+                    <div class="flex items-center justify-between font-poppins text-white" onclick="flipFrontPage(5)">
+                      <p class="cursor-pointer font-bold text-xs min-[1200px]:text-base">Peran Penyu</p>
+                      <p class="text-xs min-[1200px]:text-base cursor-pointer">10</p>
+                    </div>
+                    <div class="flex items-center justify-between font-poppins text-white" onclick="flipFrontPage(6)">
+                      <p class="cursor-pointer font-bold text-xs min-[1200px]:text-base">Dampak Penurunan Populasi Penyu</p>
+                      <p class="text-xs min-[1200px]:text-base cursor-pointer">11</p>
+                    </div>
+                    <div class="flex items-center justify-between font-poppins text-white" onclick="flipFrontPage(6)">
+                      <p class="cursor-pointer font-bold text-xs min-[1200px]:text-base">Peran Manusia dalam Mencegah Penurunan Penyu</p>
+                      <p class="text-xs min-[1200px]:text-base cursor-pointer">12</p>
+                    </div>
+                    <div class="flex items-center justify-between font-poppins text-white" onclick="flipFrontPage(7)">
+                      <p class="cursor-pointer font-bold text-xs min-[1200px]:text-base">Konservasi Penyu</p>
+                      <p class="text-xs min-[1200px]:text-base cursor-pointer">13</p>
+                    </div>
+                    <div class="flex items-center justify-between font-poppins text-white" onclick="flipFrontPage(8)">
+                      <p class="cursor-pointer font-bold text-xs min-[1200px]:text-base">Teknologi Perlindungan Penyu</p>
+                      <p class="text-xs min-[1200px]:text-base cursor-pointer">15</p>
+                    </div>
+                    <div class="flex items-center justify-between font-poppins text-white" onclick="flipFrontPage(8)">
+                      <p class="cursor-pointer font-bold text-xs min-[1200px]:text-base">Penutup</p>
+                      <p class="text-xs min-[1200px]:text-base cursor-pointer">16</p>
+                    </div>
+                    <div class="flex items-center justify-between font-poppins text-white" onclick="flipFrontPage(9)">
+                      <p class="cursor-pointer font-bold text-xs min-[1200px]:text-base">Daftar Pustaka</p>
+                      <p class="text-xs min-[1200px]:text-base cursor-pointer">18</p>
+                    </div>
+                  </div>
                 </section>
               </div>
             </div>
@@ -42,14 +108,17 @@
           </div>
           <div class="page">
             <div class="front-page" data-page="2">
-              <div class="h-full w-full bg-cover px-8" style="background-image: url(&quot;./public/asset/page4.png&quot;)">
-                <h1 class="pb-4 pt-4 font-agbalumo text-3xl text-white [text-shadow:_0_4px_4px_rgb(3_140_203_/_0.75)]">Definisi Penyu</h1>
-                <p class="text-justify font-poppins text-xs tracking-wider"><b>Penyu</b> adalah reptil laut yang termasuk kelompok <b>hewan vertebrata</b> (memiliki tulang belakang) kelas reptilia ordo testudinata. Penyu sudah ada sejak akhir zaman Kapur atau seusia dengan dinosaurus. Fosil penyu tertua setidaknya berumur 120 juta tahun. Mereka menghuni <b>perairan laut tropis</b> dan <b>sub tropis</b> di seluruh dunia.</p>
-                <p class="max-w-[300px] text-wrap pt-4 text-justify font-poppins text-xs tracking-wider">
-                  Tempurungnya terdiri atas tempurung bagian atas (carapace) dan bagian bawah (plastor). Berbeda dengan kura kura,
-                  <b>penyu tidak dapat memasukkan kaki</b> dan
-                  <b>kepalanya ke dalam tempurungnya.</b>
-                </p>
+              <div class="relative h-full w-full bg-cover px-4 min-[1200px]:px-8" style="background-image: url(&quot;./public/asset/page4.png&quot;)">
+                <h1 class="absolute bottom-3 right-3 font-agbalumo text-base min-[1200px]:text-3xl text-white [text-shadow:_0_4px_4px_rgb(3_140_203_/_0.75)]">2</h1>
+                <h1 class="pb-4 pt-4 font-agbalumo text-xl min-[1200px]:text-3xl text-white [text-shadow:_0_4px_4px_rgb(3_140_203_/_0.75)]">Definisi Penyu</h1>
+                <div class="scrollbar max-h-[200px] min-[1200px]:max-h-none overflow-y-auto pr-2 min-[1200px]:pr-0">
+                  <p class="text-justify font-poppins text-xs tracking-wider"><b>Penyu</b> adalah reptil laut yang termasuk kelompok <b>hewan vertebrata</b> (memiliki tulang belakang) kelas reptilia ordo testudinata. Penyu sudah ada sejak akhir zaman Kapur atau seusia dengan dinosaurus. Fosil penyu tertua setidaknya berumur 120 juta tahun. Mereka menghuni <b>perairan laut tropis</b> dan <b>sub tropis</b> di seluruh dunia.</p>
+                  <p class="max-w-[300px] text-wrap pt-4 text-justify font-poppins text-xs tracking-wider">
+                    Tempurungnya terdiri atas tempurung bagian atas (carapace) dan bagian bawah (plastor). Berbeda dengan kura kura,
+                    <b>penyu tidak dapat memasukkan kaki</b> dan
+                    <b>kepalanya ke dalam tempurungnya.</b>
+                  </p>
+                </div>
               </div>
             </div>
             <div class="back-page" data-page="3">
@@ -58,41 +127,46 @@
           </div>
           <div class="page">
             <div class="front-page" data-page="4">
-              <div class="h-full w-full bg-cover flex font-poppins text-xs py-8 px-4 gap-2" style="background-image: url(&quot;./public/asset/page6.png&quot;)">
-                <section class="flex flex-col gap-4">
-                  <div class="">
-                    <h1 class="font-semibold">Penyu lekang</h1>
-                    <ul class="list-disc">
-                      <li>Bentuk karapas dewasa hampir bulat</li>
-                      <li>Kepala sub triangular</li>
-                    </ul>
-                  </div>
-                  <div class="">
-                    <h1 class="font-semibold">Penyu Hijau</h1>
-                    <ul class="list-disc">
-                      <li>Tubuhnya pipih pada saat dewasa</li>
-                      <li>Karapas berbentuk oval</li>
-                    </ul>
-                  </div>
-                  <div class="">
-                    <h1 class="font-semibold">Penyu Belimbing</h1>
-                    <ul class="list-disc">
-                      <li>Bentuk kepala bulat dan tidak bersisik</li>
-                      <li>Sirip berbentuk dayung</li>
-                      <li>Satu-satunya penyu yang tidak memiliki cangkang keras</li>
-                    </ul>
-                  </div>
-                </section>
-                <section>
-                  <div class="">
-                    <h1 class="font-semibold">Penyu Tempayan</h1>
-                    <ul class="list-disc">
-                      <li>Karapas penyu dewasa berbentuk hati</li>
-                      <li>Kepala besar, lebar dan berbentuk sub triangular.</li>
-                      <li>Paruh tanduk sangat kuat dan lebih tebal dari penyu lainnya</li>
-                    </ul>
-                  </div>
-                </section>
+              <div class="relative py-4 px-4 min-[1200px]:px-0 h-full w-full gap-2 bg-cover " style="background-image: url(&quot;./public/asset/page6.png&quot;)">
+                <h1 class="absolute bottom-3 right-3 font-agbalumo text-base min-[1200px]:text-3xl text-white [text-shadow:_0_4px_4px_rgb(3_140_203_/_0.75)]">4</h1>
+                <div class="scrollbar max-h-[250px] min-[1200px]:max-h-none overflow-y-auto pr-2 min-[1200px]:pr-0">
+                  <div class="flex px-4 min-[1200px]:px-6 py-4 min-[1200px]:py-8 font-poppins text-xs">
+                  <section class="flex flex-col gap-4 text-xs min-[1200px]:text-base">
+                    <div class="">
+                      <h1 class="font-semibold">Penyu lekang</h1>
+                      <ul class="list-disc">
+                        <li>Bentuk karapas dewasa hampir bulat</li>
+                        <li>Kepala sub triangular</li>
+                      </ul>
+                    </div>
+                    <div class="">
+                      <h1 class="font-semibold">Penyu Hijau</h1>
+                      <ul class="list-disc">
+                        <li>Tubuhnya pipih pada saat dewasa</li>
+                        <li>Karapas berbentuk oval</li>
+                      </ul>
+                    </div>
+                    <div class="">
+                      <h1 class="font-semibold">Penyu Belimbing</h1>
+                      <ul class="list-disc">
+                        <li>Bentuk kepala bulat dan tidak bersisik</li>
+                        <li>Sirip berbentuk dayung</li>
+                        <li>Satu-satunya penyu yang tidak memiliki cangkang keras</li>
+                      </ul>
+                    </div>
+                  </section>
+                  <section class="text-xs min-[1200px]:text-base">
+                    <div class="">
+                      <h1 class="font-semibold">Penyu Tempayan</h1>
+                      <ul class="list-disc">
+                        <li>Karapas penyu dewasa berbentuk hati</li>
+                        <li>Kepala besar, lebar dan berbentuk sub triangular.</li>
+                        <li>Paruh tanduk sangat kuat dan lebih tebal dari penyu lainnya</li>
+                      </ul>
+                    </div>
+                  </section>
+                </div>
+                </div>
               </div>
             </div>
             <div class="back-page" data-page="5">
@@ -101,11 +175,14 @@
           </div>
           <div class="page">
             <div class="front-page" data-page="6">
-              <div class="h-full w-full bg-cover px-8" style="background-image: url(&quot;./public/asset/page8.png&quot;)">
-                <h1 class="pb-4 pt-4 font-agbalumo text-3xl text-white [text-shadow:_0_4px_4px_rgb(3_140_203_/_0.75)]">Siklus Hidup Penyu</h1>
-                <p class="text-justify font-poppins text-xs tracking-wider text-white">Salah satu dari beberapa gerakan yang paling mengesankan di dunia hewan adalah yang dilakukan oleh para migran jarak jauh seperti penyu. <b>Penyu dikenal</b> secara rutin <b>berenang dengan jarak lebih dari 10.000 km</b> yang mana kurang lebih setara dengan jarak antara pantai timur dan barat Samudra Pasifik, ketika bermigrasi dari tempat bersarang ke daerah mencari makan (Robinson, 2014). <b>Hal menakjubkan</b> lainnya yaitu <b>penyu betina dewasa</b> mampu kembali untuk bersarang</p>
-                <p class="max-w-[420px] text-wrap pt-4 text-justify font-poppins text-xs tracking-wider text-white"><b>Hal menakjubkan</b> lainnya yaitu <b>penyu betina dewasa</b> mampu kembali untuk bersarang di pantai tempat mereka dilahirkan, atau istilahnya natal homing. <b>Mereka bermigrasi ke tempat makan baru.</b> Di area makan utama inilah penyu dewasa mungkin tinggal sepanjang hidup mereka, kecuali selama musim kawin.</p>
-                <p class="max-w-[380px] text-wrap pt-4 text-justify font-poppins text-xs tracking-wider text-white"><b>Ketika tiba waktunya untuk kawin dan bersarang</b>, baik jantan maupun betina <b>meninggalkan tempat makan mereka</b> dan <b>bermigrasi ke pantai bersarang</b>. Migrasi berkala ini akan terus berlanjut sepanjang hidup mereka.</p>
+              <div class="relative h-full w-full bg-cover px-4 min-[1200px]:px-8" style="background-image: url(&quot;./public/asset/page8.png&quot;)">
+                <h1 class="absolute bottom-3 right-3 font-agbalumo text-base min-[1200px]:text-3xl text-white [text-shadow:_0_4px_4px_rgb(3_140_203_/_0.75)]">6</h1>
+                <h1 class="pb-4 pt-4 font-agbalumo text-xl min-[1200px]:text-3xl text-white [text-shadow:_0_4px_4px_rgb(3_140_203_/_0.75)]">Siklus Hidup Penyu</h1>
+                <div class="scrollbar max-h-[200px] min-[1200px]:max-h-none overflow-y-auto pr-2 min-[1200px]:pr-0">
+                  <p class="text-justify font-poppins text-xs tracking-wider text-white">Salah satu dari beberapa gerakan yang paling mengesankan di dunia hewan adalah yang dilakukan oleh para migran jarak jauh seperti penyu. <b>Penyu dikenal</b> secara rutin <b>berenang dengan jarak lebih dari 10.000 km</b> yang mana kurang lebih setara dengan jarak antara pantai timur dan barat Samudra Pasifik, ketika bermigrasi dari tempat bersarang ke daerah mencari makan (Robinson, 2014). <b>Hal menakjubkan</b> lainnya yaitu <b>penyu betina dewasa</b> mampu kembali untuk bersarang</p>
+                  <p class="max-w-[420px] text-wrap pt-4 text-justify font-poppins text-xs tracking-wider text-white"><b>Hal menakjubkan</b> lainnya yaitu <b>penyu betina dewasa</b> mampu kembali untuk bersarang di pantai tempat mereka dilahirkan, atau istilahnya natal homing. <b>Mereka bermigrasi ke tempat makan baru.</b> Di area makan utama inilah penyu dewasa mungkin tinggal sepanjang hidup mereka, kecuali selama musim kawin.</p>
+                  <p class="max-w-[380px] text-wrap pt-4 text-justify font-poppins text-xs tracking-wider text-white"><b>Ketika tiba waktunya untuk kawin dan bersarang</b>, baik jantan maupun betina <b>meninggalkan tempat makan mereka</b> dan <b>bermigrasi ke pantai bersarang</b>. Migrasi berkala ini akan terus berlanjut sepanjang hidup mereka.</p>
+                </div>
               </div>
             </div>
             <div class="back-page" data-page="7">
@@ -114,7 +191,10 @@
           </div>
           <div class="page">
             <div class="front-page" data-page="8">
-              <div class="h-full w-full bg-cover px-8 text-white" style="background-image: url(&quot;./public/asset/page10.png&quot;)">
+              <div class="relative h-full w-full bg-cover px-8 text-white" style="background-image: url(&quot;./public/asset/page10.png&quot;)"></div>
+              <h1 class="absolute bottom-3 right-3 font-agbalumo text-base min-[1200px]:text-3xl text-white [text-shadow:_0_4px_4px_rgb(3_140_203_/_0.75)]">8</h1>
+              <div class="absolute top-[42px] right-[18px] min-[1200px]:top-[79px] min-[1200px]:right-[33px] w-full h-full min-[1200px]:max-w-[353px] min-[1200px]:max-h-[226px] max-w-[193px] max-h-[124px]">
+                <iframe src="https://www.youtube.com/embed/xSJq5FfIiUo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="w-full h-full"> </iframe>
               </div>
             </div>
             <div class="back-page" data-page="9">
@@ -123,10 +203,13 @@
           </div>
           <div class="page">
             <div class="front-page" data-page="10">
-              <div class="h-full w-full bg-cover px-8 text-white" style="background-image: url(&quot;./public/asset/page12.png&quot;)">
-                <h1 class="pb-4 pt-4 font-agbalumo text-3xl text-white [text-shadow:_0_4px_4px_rgb(3_140_203_/_0.75)]">Peran Penyu</h1>
-                <p class="text-justify font-poppins text-xs tracking-wider"><b>Penyu memiliki peran penting</b> untuk menjaga kesehatan laut di seluruh dunia selama lebih dari 100 juta tahun. Peran itu antara lain <b>menjaga fungsi terumbu karang</b> supaya produktif hingga <b>memindahkan nutrisi</b> penting dari perairan ke daratan. Menurunnya populasi penyu, berbanding lurus dengan berkurangnya kemampuan penyu melakukan fungsi pentingnya di laut.</p>
-                <p class="text-wrap pt-4 text-justify font-poppins text-xs tracking-wider"><b>Penyu</b> mempunyai <b>peran penting</b> dalam <b>menjaga ekosistem laut</b> yang sehat. Laut yang sehat akan menjadi habitat berjuta-juta ikan sebagai sumber protein penting bagi manusia. Beberapa <b>hewan dan tumbuhan menempel di karapas</b> penyu seperti teritip, alga dan hewan-hewan kecil yang biasa disebut dengan <b>Epibiont</b>.</p>
+              <div class="relative h-full w-full bg-cover px-4 min-[1200px]:px-8 text-white" style="background-image: url(&quot;./public/asset/page12.png&quot;)">
+                <h1 class="absolute bottom-3 right-3 font-agbalumo text-base min-[1200px]:text-3xl text-white [text-shadow:_0_4px_4px_rgb(3_140_203_/_0.75)]">10</h1>
+                <h1 class="pb-4 pt-4 font-agbalumo text-xl min-[1200px]:text-3xl text-white [text-shadow:_0_4px_4px_rgb(3_140_203_/_0.75)]">Peran Penyu</h1>
+                <div class="scrollbar max-h-[200px] min-[1200px]:max-h-none overflow-y-auto pr-2 min-[1200px]:pr-0">
+                  <p class="text-justify font-poppins text-xs tracking-wider"><b>Penyu memiliki peran penting</b> untuk menjaga kesehatan laut di seluruh dunia selama lebih dari 100 juta tahun. Peran itu antara lain <b>menjaga fungsi terumbu karang</b> supaya produktif hingga <b>memindahkan nutrisi</b> penting dari perairan ke daratan. Menurunnya populasi penyu, berbanding lurus dengan berkurangnya kemampuan penyu melakukan fungsi pentingnya di laut.</p>
+                  <p class="text-wrap pt-4 text-justify font-poppins text-xs tracking-wider"><b>Penyu</b> mempunyai <b>peran penting</b> dalam <b>menjaga ekosistem laut</b> yang sehat. Laut yang sehat akan menjadi habitat berjuta-juta ikan sebagai sumber protein penting bagi manusia. Beberapa <b>hewan dan tumbuhan menempel di karapas</b> penyu seperti teritip, alga dan hewan-hewan kecil yang biasa disebut dengan <b>Epibiont</b>.</p>
+                </div>
               </div>
             </div>
             <div class="back-page" data-page="11">
@@ -135,11 +218,14 @@
           </div>
           <div class="page">
             <div class="front-page" data-page="12">
-              <div class="h-full w-full bg-cover px-8 text-white" style="background-image: url(&quot;./public/asset/page14.jpg&quot;)">
-                <h1 class="pt-4 font-agbalumo text-3xl text-white [text-shadow:_0_4px_4px_rgb(3_140_203_/_0.75)]">Peran Manusia </h1>
-                <h1 class="pb-4 font-agbalumo text-3xl text-white [text-shadow:_0_4px_4px_rgb(3_140_203_/_0.75)]">Mencegah Penuruna Penyu</h1>
-                <p class="text-justify font-poppins text-xs tracking-wider text-wrap max-w-[390px]"><b>Sebagian orang menganggap penyu</b> adalah salah satu hewan laut yang <b>memiliki banyak kelebihan</b>. Selain <b>tempurungnya</b> yang menarik <b>untuk cendramata</b>, dagingnya yang lezat ditusuk jadi <b>Sate Penyu</b> berkhasiat <b>untuk obat dan ramuan kecantikan</b>. Membuat banyak manusia yang memburu penyu  dengan semena-mena. Meski sudah ada <b>Peraturan Pemerintah Nomor 7 tahun 1999 tentang Pelestarian Jenis Tumbuhan dan Satwa</b>, yang melindungi semua jenis penyu, perburuan terhadap hewanyang berjalan lamban ini harus terus berlanjut dan dijaga. </p>
-                <p class="text-wrap pt-4 text-justify font-poppins text-xs tracking-wide max-w-[330px]"><b>Dalam menjaga kelestarian penyu</b> di Indonesia, satu hal <b>yang paling penting</b> adalah <b>keterlibatan dan kesadaran masyarakat</b>. Maka, bersama-sama lah kita menjaga kelestariann penyu dengan peran yang kita miliki. </p>
+              <div class="relative h-full w-full bg-cover px-4 min-[1200px]:px-8 text-white" style="background-image: url(&quot;./public/asset/page14.jpg&quot;)">
+                <h1 class="absolute bottom-3 right-3 font-agbalumo text-base min-[1200px]:text-3xl text-white [text-shadow:_0_4px_4px_rgb(3_140_203_/_0.75)]">12</h1>
+                <h1 class="pt-4 font-agbalumo min-[1200px]:text-3xl text-white [text-shadow:_0_4px_4px_rgb(3_140_203_/_0.75)]">Peran Manusia</h1>
+                <h1 class="pb-4 font-agbalumo min-[1200px]:text-3xl text-white [text-shadow:_0_4px_4px_rgb(3_140_203_/_0.75)]">Mencegah Penuruna Penyu</h1>
+                <div class="scrollbar max-h-[180px] min-[1200px]:max-h-none min-[1200px]:max-h-none overflow-y-auto pr-2 min-[1200px]:pr-0">
+                  <p class="max-w-[390px] text-wrap text-justify font-poppins text-xs tracking-wider"><b>Sebagian orang menganggap penyu</b> adalah salah satu hewan laut yang <b>memiliki banyak kelebihan</b>. Selain <b>tempurungnya</b> yang menarik <b>untuk cendramata</b>, dagingnya yang lezat ditusuk jadi <b>Sate Penyu</b> berkhasiat <b>untuk obat dan ramuan kecantikan</b>. Membuat banyak manusia yang memburu penyu dengan semena-mena. Meski sudah ada <b>Peraturan Pemerintah Nomor 7 tahun 1999 tentang Pelestarian Jenis Tumbuhan dan Satwa</b>, yang melindungi semua jenis penyu, perburuan terhadap hewanyang berjalan lamban ini harus terus berlanjut dan dijaga.</p>
+                  <p class="max-w-[330px] text-wrap pt-4 text-justify font-poppins text-xs tracking-wide"><b>Dalam menjaga kelestarian penyu</b> di Indonesia, satu hal <b>yang paling penting</b> adalah <b>keterlibatan dan kesadaran masyarakat</b>. Maka, bersama-sama lah kita menjaga kelestariann penyu dengan peran yang kita miliki.</p>
+                </div>
               </div>
             </div>
             <div class="back-page" data-page="13">
@@ -148,9 +234,10 @@
           </div>
           <div class="page">
             <div class="front-page" data-page="14">
-              <div class="h-full w-full bg-cover px-8 text-white flex flex-col justify-between" style="background-image: url(&quot;./public/asset/page16.png&quot;)">
-              <span></span>
-              <p class="mb-16 text-wrap pt-4 text-justify font-poppins text-xs tracking-wide">Selain  itu, <b>masyarakat pesisir pantai</b> peneluran wajib dibangkitkan rasa kesadarannya melalui edukasi terkait konservasi penyu. Konservasi penyu merupakan kegiatan perlindungan dan pelestarian penyu demi mempertahankan keanekaragaman spesies penyu.</p>
+              <div class="relative flex h-full w-full flex-col justify-between bg-cover px-4 min-[1200px]:px-8 text-white" style="background-image: url(&quot;./public/asset/page16.png&quot;)">
+                <h1 class="absolute bottom-3 right-3 font-agbalumo text-base min-[1200px]:text-3xl text-white [text-shadow:_0_4px_4px_rgb(3_140_203_/_0.75)]">14</h1>
+                <span></span>
+                <p class="mb-8 min-[1200px]:mb-16 text-wrap pt-4 text-justify font-poppins text-xs tracking-wide">Selain  itu, <b>masyarakat pesisir pantai</b> peneluran wajib dibangkitkan rasa kesadarannya melalui edukasi terkait konservasi penyu. Konservasi penyu merupakan kegiatan perlindungan dan pelestarian penyu demi mempertahankan keanekaragaman spesies penyu.</p>
               </div>
             </div>
             <div class="back-page" data-page="15">
@@ -159,10 +246,16 @@
           </div>
           <div class="page">
             <div class="front-page" data-page="16">
-              <audio id="background-audio" autoplay loop>
-                <source src="./public/asset/Website.mp3" type="audio/mpeg">
-                Your browser does not support the audio element.
-            </audio>
+              <div class="relative h-full w-full bg-cover text-white" style="background-image: url(&quot;./public/asset/page18.png&quot;)">
+                <h1 class="absolute bottom-3 right-3 font-agbalumo text-base min-[1200px]:text-3xl text-white [text-shadow:_0_4px_4px_rgb(3_140_203_/_0.75)]">16</h1>
+                <div class="mx-auto flex w-max flex-col gap-1 min-[1200px]:gap-4 pt-4 min-[1200px]:pt-14">
+                  <h1 class="text-center font-agbalumo text-xl min-[1200px]:text-3xl text-white [text-shadow:_0_4px_4px_rgb(3_140_203_/_0.75)]">Mari jaga, dan</h1>
+                  <h1 class="[text-shadow:_0_4px_4px_rgb(3_140_203_/_0.75) text-center font-agbalumo text-xl min-[1200px]:text-3xl text-white">Selamatkan Penyu!</h1>
+                <div class="scrollbar max-h-[170px] min-[1200px]:max-h-none overflow-y-auto pr-2 min-[1200px]:pr-0">
+                  <p class="min-[1200px]:max-w-[390px] max-w-[240px] text-wrap text-justify font-poppins text-xs tracking-wider">Mari bersama-sama menjaga kelestarian penyu dan lingkungan pesisir pantai. Penurunan populasi penyu bukan dapat mengancam keseimbangan ekosistem laut yang berperan penting bagi kehidupan di pantai. Mari, kita turut berkontribusi pada masa depan yang lebih baik bagi alam dan generasi mendatang. Jadilah bagian dari perubahan, karena setiap langkah kecil kita dapat membawa dampak besar bagi kehidupan laut dan keberlangsungan ekosistem pantai.</p>
+                </div>
+                </div>
+              </div>
             </div>
             <div class="back-page" data-page="17">
               <center><h1>Halaman 17</h1></center>
@@ -170,7 +263,25 @@
           </div>
           <div class="page">
             <div class="front-page" data-page="18">
-              <center><h1>Halaman 18</h1></center>
+              <div class="relative h-full w-full bg-cover text-white" style="background-image: url(&quot;./public/asset/page20.png&quot;)">
+                <h1 class="absolute bottom-3 right-3 font-agbalumo text-base min-[1200px]:text-3xl text-white [text-shadow:_0_4px_4px_rgb(3_140_203_/_0.75)]">18</h1>
+                <div class="mx-auto w-4/5 pt-4 min-[1200px]:pt-8">
+                  <h1 class="font-agbalumo text-xl min-[1200px]:text-3xl text-white [text-shadow:_0_4px_4px_rgb(3_140_203_/_0.75)]">Daftar Pustaka</h1>
+                <div class="scrollbar max-h-[210px] min-[1200px]:max-h-[400px] overflow-y-auto pr-2 min-[1200px]:pr-0">
+                  <div class="mt-4 flex  flex-col gap-2">
+                    <p class="text-justify font-poppins text-xs text-wrap">ProFauna. (n.d., n.d. n.d.). Tentang Penyu Indonesia. Diambil kembali dari ProFauna Indonesia: <a class="w-full text-wrap" href="https://www.profauna.net/id/kampanye-penyu/tentang-penyu-indonesia">https:// www.profauna.net/ id/kampanye -penyu/tentang-penyu-indonesia</a></p>
+                    <p class="text-justify font-poppins text-xs text-wrap">WWF-Indonesia. (2024, Januari 9). PENYU. Diambil kembali dari wwf.id: <a class="w-full text-wrap" href="https://www.wwf.id/id/blog/penyu">https://www.wwf.id/id/ blog/penyu</a></p>
+                    <p class="text-justify font-poppins text-xs text-wrap">Isdianto, A., Luthfi, O. M., Asadi, M. A., Aliviyanti , D., Semedi , B., Afriani , G., . . . Guntur. (2022). Penyu: Biologi, Habitat & Ancaman. Malang: Tim UB Media.</p>
+                    <p class="text-justify font-poppins text-xs text-wrap">Timur, D. K. (2024, Maret 22). Kehidupan Penyu di Laut. Diambil kembali dari dkp.jatimprov.go.id: <a class="w-full text-wrap" href="https://dkp.jatimprov.go.id/unit/dkp-malangkab//news/view/3006">https://dkp.jatimprov. go.id/unit/dkp-malangkab//news/ view/3006</a></p>
+                    <p class="text-justify font-poppins text-xs text-wrap">Suryawan, W. K., & Tehupeiory, A. (2023). Strategi Partisipatif Masyarakat dalam Mitigasi Dampak Alami dan Manusia terhadap Konservasi Penyu di Indonesia. Indonesian Journal of Conservation.</p>
+                    <p class="text-justify font-poppins text-xs text-wrap">Indonesia, W. (2024, Juli 29). Program ANT: Menjaga Penyu Perancak Bali dengan Teknologi Inovatif. Diambil kembali dari mnctrijaya.com: <a class="w-full text-wrap" href="https://www.mnctrijaya.com/news/detail/67073/program-ant-menjaga-penyu-perancak-bali-dengan-teknologi-inovatif">https:// www.mnctrijaya.com/ news/detail/67073/ program-ant-menjaga-penyu-perancak-bali-dengan-teknologi-inovatif</a></p>
+                    <p class="text-justify font-poppins text-xs text-wrap">Wulandari, G., Rahayu, D., & Nursiyono. (2022, Agustus 11). Suaka Penyu di Pulau Pramuka Taman Nasional Kepuluan Seribu. Diambil kembali dari jasling.menlhk.go.id: <a class="w-full text-wrap" href="https://jasling.menlhk.go.id/berita-dan-artikel/artikel/suaka-penyu-di-pulau-pramuka">https://jasling.menlhk .go.id/berita-dan-artikel/artikel/suaka-penyu-di-pulau-pramuka</a></p>
+                    <p class="text-justify font-poppins text-xs text-wrap">Pramudya, A. (2022, Januari 19). Populasi Penyu Terancam, Ekosistem Manusia Terancam. Diambil kembali dari Kumparan: <a class="w-full text-wrap" href="https://kumparan.com/anindya-pramudya/populasi-penyu-terancam-ekosistem-manusia-terancam-1xKkpmY9im6">https://kumparan.com/ anindya-pramudya/populasi-penyu-terancam-ekosistem-manusia-terancam-1xKkpmY9im6</a></p>
+                    <p class="text-justify font-poppins text-xs text-wrap">Parawangsa, I. Y., Sukanta, I., Budi, E. S., & Utami, D. H. (2024). Tendensi Asal Sarang Penyu yang Direlokasi kePusat Pendidikan dan Konservasi Penyu, Serangan-Bali. ejournalfpikunipa.ac.id.</p>
+                  </div>
+                </div>
+                </div>
+              </div>
             </div>
             <div class="back-page" data-page="19">
               <center><h1>Halaman 19</h1></center>
@@ -178,23 +289,49 @@
           </div>
           <div class="page">
             <div class="front-page" data-page="20">
-              <center><h1>Halaman 20</h1></center>
-            </div>
-            <div class="back-page" data-page="21">
-              <center><h1>Halaman 21</h1></center>
-            </div>
-          </div>
-          <div class="page">
-            <div class="front-page" data-page="22">
-              <center><h1>Halaman 22</h1></center>
+              <div class="relative h-full w-full bg-cover px-4 min-[1200px]:px-8 pt-4 min-[1200px]:pt-24 text-white" style="background-image: url(&quot;./public/asset/page22.png&quot;)">
+                <h1 class="absolute bottom-3 right-3 font-agbalumo text-base min-[1200px]:text-3xl text-white [text-shadow:_0_4px_4px_rgb(3_140_203_/_0.75)]">20</h1>
+                <div class="hidden min-[1200px]:block">
+                  <h1 class="font-agbalumo text-base min-[1200px]:text-3xl text-white [text-shadow:_0_4px_4px_rgb(3_140_203_/_0.75)]">Kamu bertemu penyu</h1>
+                  <h1 class="[text-shadow:_0_4px_4px_rgb(3_140_203_/_0.75) font-agbalumo text-base min-[1200px]:text-3xl text-white">terdampar? Yuk Hubungi</h1>
+                  <h1 class="[text-shadow:_0_4px_4px_rgb(3_140_203_/_0.75) font-agbalumo text-base min-[1200px]:text-3xl text-white">kontak dibawah!</h1>
+                </div>
+                <div class="block min-[1200px]:hidden">
+                  <h1 class="[text-shadow:_0_4px_4px_rgb(3_140_203_/_0.75) font-agbalumo text-base min-[1200px]:text-3xl text-white">Kamu bertemu penyu terdampar?</h1>
+                  <h1 class="[text-shadow:_0_4px_4px_rgb(3_140_203_/_0.75) font-agbalumo text-base min-[1200px]:text-3xl text-white">Yuk Hubungi kontak dibawah!</h1>
+                </div>
+                <div class="flex flex-col gap-4 min-[1200px]:pl-14 pt-4">
+                  <section>
+                    <h1 class="text-justify font-poppins text-xs min-[1200px]:text-sm font-semibold text-white">Alamat</h1>
+                    <p class="text-justify font-poppins text-xs min-[1200px]:text-sm font-semibold text-white">Jakarta: Gedung Pusat Kehutanan Manggala Wanabakti Blok 1 Lantai 15, Jl. vJend. Gatot Subroto Senayan</p>
+                    <p class="text-justify font-poppins text-xs min-[1200px]:text-sm font-semibold text-white">Bogor: Jl. Ir. H. Djuanda No.15 Bogor</p>
+                  </section>
+                  <section>
+                    <h1 class="text-justify font-poppins text-xs min-[1200px]:text-sm font-semibold text-white">Phone</h1>
+                    <p class="text-justify font-poppins text-xs min-[1200px]:text-sm font-semibold text-white">Jakarta (021) 5790 3072</p>
+                    <p class="text-justify font-poppins text-xs min-[1200px]:text-sm font-semibold text-white">Bogor (0251) 8324 013</p>
+                  </section>
+                  <section>
+                    <h1 class="text-justify font-poppins text-xs min-[1200px]:text-sm font-semibold text-white">Email</h1>
+                    <p class="text-justify font-poppins text-xs min-[1200px]:text-sm font-semibold text-white">dit.pjlhk@gmail.com</p>
+                  </section>
+                </div>
+              </div>
             </div>
             <div class="back-page" data-page="backcover">
-              <center><h1>backcover</h1></center>
+              <div class="h-full w-full bg-cover text-white" style="background-image: url(&quot;./public/asset/backcover.png&quot;)"></div>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <audio id="backsound" src="./public/asset/sfx.WAV"></audio>
+
+    <audio id="audio" autoplay loop>
+      <source src="./public/asset/Website.mp3" type="audio/mp3" />
+      Your browser does not support the audio element.
+    </audio>
+    <button onclick="toggleAudio()" class="fixed min-[1200px]:bottom-10 min-[1200px]:right-10 bottom-3 right-3 aspect-square w-8 min-[1200px]:w-14 rounded-full bg-black text-white" id="audioControl"><i class="fa-solid fa-play" id="logoControl"></i></button>
     <script src="./public/js/jquery.js"></script>
     <script src="./public/js/script.js"></script>
   </body>

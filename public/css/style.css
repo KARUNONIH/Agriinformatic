@@ -24,7 +24,17 @@ body {
   flex-direction: column;
   position: relative;
   z-index: 1;
+  margin-left: 110px;
 }
+
+.container {
+  width: 100vw; /* Membatasi lebar container */
+  height: 90vh; /* Membatasi tinggi container */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 
 h1 {
   margin: 0;
@@ -60,6 +70,7 @@ h1 {
   -moz-transform-style: preserve-3d;
   transform-style: preserve-3d;
   filter: drop-shadow(0 0px 1px black);
+  -webkit-filter: drop-shadow(0 0px 1px black);
 }
 .book .pages,
 .book .pages > div {
